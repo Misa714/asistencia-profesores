@@ -1,0 +1,123 @@
+body {
+    background-image: url('C:/Users/lembrox/Desktop/Sistema_Inf/FOTOS/FOTO4.jpg');
+    font-family: sans-serif;
+    background-color: #08256f;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    background-position: center;
+}
+
+#centerContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-right: 140px;
+}
+
+#CajaGrande {
+
+    width: 26%;
+    margin: 30px;
+    background: white;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: block;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    padding: 0px; 
+}
+
+#ImagenDerecha {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+#ImagenDerecha img {
+    margin-top: 20px;
+    max-width: 180px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+#contenido {
+    width: 100%; 
+    text-align: center;
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin: 10px 0.5px;
+    color: #170505;
+    width: 100%; 
+    text-align: center; 
+}
+
+input, select, button {
+    padding: 5px;
+    margin: 0px 0px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 80%; 
+}
+
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#Regresar {
+    width: 100%;
+    height: 20px;
+    display: flexbox;
+}
+
+#Regresar2{
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    justify-items: initial;
+}
+
+
+#backButton {
+    width: 90%;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: initial;
+}
+
+#backButton i {
+    margin-right: 10px;
+}
+
+#backButton:hover {
+    background-color: rgb(4, 100, 195);
+}

@@ -1,0 +1,108 @@
+body {
+    background-image: url('C:/Users/lembrox/Desktop/Sistema_Inf/FOTOS/logi_1.gif');
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #08256f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(0); /* Mostrar sidebar por defecto */
+}
+
+.sidebar.hide {
+    transform: translateX(-100%); /* Ocultar sidebar */
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.sidebar-header .logo {
+    margin-left: 20px;
+    max-width: 40px;
+    margin-right: 20px;
+}
+
+.sidebar-header h1 {
+    font-size: 1.5em;
+    margin-left: 20px;
+    color: black;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu li a {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #357abd;
+}
+
+.menu li a i {
+    margin-right: 10px;
+}
+
+.content {
+    padding: 15px;
+    flex-grow: 1;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#cerrar-sesion {
+    padding: 20px 55px;
+    margin-top: auto;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#cerrar-sesion:hover {
+    background-color: #357abd;
+}
+
+.menu-toggle {
+    top: 20px;
+    left: 20px;
+    background-color: #08256f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle:hover {
+    background-color: #357abd;
+}

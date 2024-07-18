@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Toma de asignatura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="C:\Users\lembrox\Desktop\Sistema_Inf\SCRIPTS\pag_asig.js"></script>
+    <link rel="stylesheet" href="C:\Users\lembrox\Desktop\Sistema_Inf\CSS\pag_ingre_asig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="Regresar2">
+    <div id="Regresar">
+        <button id="backButton" onclick="window.location.href='pag_principal.html'">
+        <i class="fa-solid fa-right-from-bracket"></i>Volver
+        </button>
+    </div>
+</div>
+<div id="centerContainer">
+    <div id="CajaGrande">
+        <div id="contenido">
+            <form id="miFormulario">
+                <div id="ImagenDerecha">
+                    <img src="C:\Users\lembrox\Desktop\Sistema_Inf\FOTOS\logo-ea.png" alt="Imagen pequeña">
+                </div>
+
+                <h1>Ingresar Asignatura</h1>
+                <label for="codigo">Codigo de asignatura:</label>
+                <input type="text" id="codigo" required><br>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required><br>
+
+                <label for="aula">Aula:</label>
+                <input type="text" id="aula" required><br>
+                
+                <label for="horario">Horario:</label>
+                <input type="text" id="horario" required><br>
+
+                <label for="rut">Rut de Profesor:</label>
+                <input type="text" id="rut" required><br>
+
+                <button type="submit" onclick="enviarDatos()">Enviar</button>
+                <button type="button" id="download-btn" onclick="descargarArchivo()">Descargar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="C:\Users\lembrox\Desktop\Sistema_Inf\SCRIPTS\pag_profe.js"></script>
+    <link rel="stylesheet" href="C:\Users\lembrox\Desktop\Sistema_Inf\CSS\pag_profe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="Regresar2">
+    <div id="Regresar">
+        <button id="backButton" onclick="window.location.href='pag_principal.html'">
+        <i class="fa-solid fa-right-from-bracket"></i>Volver
+        </button>
+    </div>
+</div>
+<div id="centerContainer">
+    <div id="CajaGrande">
+        <div id="contenido">
+            <form id="Profe">
+                <div id="ImagenDerecha">
+                    <img src="C:\Users\lembrox\Desktop\Sistema_Inf\FOTOS\logo-ea.png" alt="Imagen pequeña">
+                </div>
+                
+                <h1>Ingresar profesores</h1>
+                <label for="rut">Rut:</label>
+                <input type="text" id="rut" required><br>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required><br>
+
+                <label for="profesion">Profesion:</label>
+                <input type="text" id="profesion" required><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" required><br>
+
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono"required><br>
+
+                <button type="submit" onclick="enviarDatos()">Enviar</button>
+                <button type="button" onclick="descargarArchivo()">Descargar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
